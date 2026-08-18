@@ -96,5 +96,5 @@ GATE-04: ClosureCutover, Runbook Handover & Post-MortemFormal acceptance sign-of
 ### 6.2 Key Constraints & Assumptions
 
 * **Constraint:** Cutover must occur during the scheduled 48-hour low-volume maintenance window over a holiday weekend.
-* **Assumption:** Internal departmental SMEs will be dedicated $\ge 50\%$ part-time during sprint UAT cycles.
+* **Assumption:** Internal departmental SMEs will be dedicated $\ge 50\%$ part-time during sprint UAT cycles..
 
