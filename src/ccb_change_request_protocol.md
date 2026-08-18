@@ -60,10 +60,102 @@ Change Requests (CRs) are categorized into three severity tiers based on budget,
      |                       |                       |-- 3. Convene Review  |
      |                       |                       |      & Vote          |
      |                       |<-- Decision Log ------|                      |
-     |                       |    (Approve/Reject)   |                      |
+     |                       |   (Approve/Reject)    |                      |
      |<-- 4. Notify ---------|--------------------------------------------->|
      |    Stakeholders       |-- 5. Baseline Re-alignment (WBS, CPM, Cost)->|
 ```
-[cite_start]
-http://googleusercontent.com/immersive_entry_chip/0
-http://googleusercontent.com/immersive_entry_chip/1
+
+ ### 4.1 Step-by-Step Procedure
+
+1. **Submission (Step 1):** The requestor completes a standardized Change Request Form documenting the business justification, proposed modification, and affected deliverables.
+2. **Impact Assessment (Step 2):** The Lead Technical Consultant and Technical Lead assess the technical feasibility, cost implications, critical path impact, and risk profile.
+3. **Formal CCB Review (Step 3):** The board evaluates the CR during the bi-weekly session and renders one of three formal decisions:
+   * **APPROVED:** Formal baseline adjustment authorized.
+   * **REJECTED:** Closed with recorded rationale in the CCB log.
+   * **DEFERRED:** Returned to requestor for additional analysis or deferred to next phase.
+4. **Baseline Re-alignment (Step 4):** Upon approval, the Project Manager updates the Integrated Master Schedule (CPM), WBS Dictionary, and cost baselines.
+5. **Execution & Audit (Step 5):** The modification is assigned to the appropriate Agile sprint backlog and logged in the project governance audit trail.
+
+---
+
+## 5. Emergency Change Procedure (Fast-Track)
+
+For urgent production-blocking incidents or zero-day security vulnerabilities that cannot await the bi-weekly CCB cycle:
+
+1. **Authorized Emergency Decision Makers:** Dual authorization by **Executive Sponsor + Lead Technical Consultant (Samuel Chinwendu Agu)**.
+2. **Execution:** Immediate containment and technical patch deployment.
+3. **Retrospective Audit Window:** A formal retrospective CCB audit and documentation sign-off must occur within **48 hours** of emergency deployment.
+
+---
+
+## 6. Standardized Change Request (CR) Form Template
+
+```text
+ 
+### 4.1 Step-by-Step Procedure
+
+1. **Submission (Step 1):** The requestor completes a standardized Change Request Form documenting the business justification, proposed modification, and affected deliverables.
+2. **Impact Assessment (Step 2):** The Lead Technical Consultant and Technical Lead assess the technical feasibility, cost implications, critical path impact, and risk profile.
+3. **Formal CCB Review (Step 3):** The board evaluates the CR during the bi-weekly session and renders one of three formal decisions:
+   * **APPROVED:** Formal baseline adjustment authorized.
+   * **REJECTED:** Closed with recorded rationale in the CCB log.
+   * **DEFERRED:** Returned to requestor for additional analysis or deferred to next phase.
+4. **Baseline Re-alignment (Step 4):** Upon approval, the Project Manager updates the Integrated Master Schedule (CPM), WBS Dictionary, and cost baselines.
+5. **Execution & Audit (Step 5):** The modification is assigned to the appropriate Agile sprint backlog and logged in the project governance audit trail.
+
+---
+
+## 5. Emergency Change Procedure (Fast-Track)
+
+For urgent production-blocking incidents or zero-day security vulnerabilities that cannot await the bi-weekly CCB cycle:
+
+1. **Authorized Emergency Decision Makers:** Dual authorization by **Executive Sponsor + Lead Technical Consultant (Samuel Chinwendu Agu)**.
+2. **Execution:** Immediate containment and technical patch deployment.
+3. **Retrospective Audit Window:** A formal retrospective CCB audit and documentation sign-off must occur within **48 hours** of emergency deployment.
+
+---
+
+## 6. Standardized Change Request (CR) Form Template
+
+```text
+================================================================================
+                    ENTERPRISE CHANGE REQUEST (CR) FORM
+================================================================================
+CR Tracking ID: CR-____                     Date Submitted: YYYY-MM-DD
+Requestor Name: __________________________  Department/Role: ___________________
+Deliverable Affected: [ ] Data Migration    [ ] ERP Config     [ ] Security/Infra
+                      [ ] Interface/API     [ ] UAT Scope      [ ] Other: ______
+
+1. DESCRIPTION OF PROPOSED CHANGE:
+   [Detailed technical/functional narrative of the change]
+
+2. BUSINESS JUSTIFICATION & DRIVER:
+   [Reason for change, business impact if rejected, regulatory/operational driver]
+
+3. IMPACT ASSESSMENT (Completed by Lead Technical Consultant):
+   - Estimated Cost Variance: $_______________ USD
+   - Estimated Schedule Variance: +/- _______ Working Days
+   - Critical Path Affected: [ ] YES  [ ] NO
+   - Security/Compliance Risk Score (1-5): _____
+
+4. CCB DETERMINATION:
+   [ ] APPROVED        [ ] REJECTED        [ ] DEFERRED FOR STUDY
+   Voting Quorum Record:
+   - Lead PM / Governance Auditor: _______________  [Date: _________]
+   - Enterprise Solution Architect: ______________  [Date: _________]
+   - Operations Process Owner: ___________________  [Date: _________]
+
+5. BASELINE RE-ALIGNMENT SIGN-OFF:
+   WBS Updated: [ ] YES   Master Schedule (CPM) Updated: [ ] YES   Budget Adjusted: [ ] YES
+================================================================================
+
+## 7. Change Control Audit Register Schema
+
+All evaluated change requests are recorded in the central repository audit log:
+
+| CR_ID | Submission_Date | Title_Description | Impact_Tier | Cost_Impact | Schedule_Impact | CCB_Status | Resolution_Date |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| CR-001 | 2026-04-10 | Add Multi-Region Tax Engine API | Tier 2 | +$8,200 | +3 Days | APPROVED | 2026-04-12 |
+| CR-002 | 2026-05-02 | Legacy Inventory Custom Field Import | Tier 1 | +$1,100 | 0 Days | APPROVED | 2026-05-03 |
+| CR-003 | 2026-05-18 | Out-of-Scope Custom Warehouse Mod | Tier 3 | +$24,000 | +9 Days | REJECTED | 2026-05-20 |
+
