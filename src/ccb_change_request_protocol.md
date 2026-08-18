@@ -91,33 +91,6 @@ For urgent production-blocking incidents or zero-day security vulnerabilities th
 ## 6. Standardized Change Request (CR) Form Template
 
 ```text
- 
-### 4.1 Step-by-Step Procedure
-
-1. **Submission (Step 1):** The requestor completes a standardized Change Request Form documenting the business justification, proposed modification, and affected deliverables.
-2. **Impact Assessment (Step 2):** The Lead Technical Consultant and Technical Lead assess the technical feasibility, cost implications, critical path impact, and risk profile.
-3. **Formal CCB Review (Step 3):** The board evaluates the CR during the bi-weekly session and renders one of three formal decisions:
-   * **APPROVED:** Formal baseline adjustment authorized.
-   * **REJECTED:** Closed with recorded rationale in the CCB log.
-   * **DEFERRED:** Returned to requestor for additional analysis or deferred to next phase.
-4. **Baseline Re-alignment (Step 4):** Upon approval, the Project Manager updates the Integrated Master Schedule (CPM), WBS Dictionary, and cost baselines.
-5. **Execution & Audit (Step 5):** The modification is assigned to the appropriate Agile sprint backlog and logged in the project governance audit trail.
-
----
-
-## 5. Emergency Change Procedure (Fast-Track)
-
-For urgent production-blocking incidents or zero-day security vulnerabilities that cannot await the bi-weekly CCB cycle:
-
-1. **Authorized Emergency Decision Makers:** Dual authorization by **Executive Sponsor + Lead Technical Consultant (Samuel Chinwendu Agu)**.
-2. **Execution:** Immediate containment and technical patch deployment.
-3. **Retrospective Audit Window:** A formal retrospective CCB audit and documentation sign-off must occur within **48 hours** of emergency deployment.
-
----
-
-## 6. Standardized Change Request (CR) Form Template
-
-```text
 ================================================================================
                     ENTERPRISE CHANGE REQUEST (CR) FORM
 ================================================================================
