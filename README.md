@@ -149,6 +149,7 @@ cd pm-enterpriseit-erpmigration-governance-engine
 ```
 
 ### Step 3:Inspect governance architecture and configuration
+```bash
 cat src/governance_framework.yaml
 ```
 
