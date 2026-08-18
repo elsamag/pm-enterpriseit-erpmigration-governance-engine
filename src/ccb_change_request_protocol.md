@@ -148,6 +148,7 @@ Deliverable Affected: [ ] Data Migration    [ ] ERP Config     [ ] Security/Infr
 5. BASELINE RE-ALIGNMENT SIGN-OFF:
    WBS Updated: [ ] YES   Master Schedule (CPM) Updated: [ ] YES   Budget Adjusted: [ ] YES
 ================================================================================
+```
 
 ## 7. Change Control Audit Register Schema
 
