@@ -1,0 +1,124 @@
+==============================================================================
+# Enterprise Project Governance & Phase-Gate Configuration
+# Enterprise Practice: Elsamag IT Solutions
+# Lead Technical Consultant: Samuel Chinwendu Agu
+# Target Domain: Enterprise IT (Legacy ERP System Migration)
+# Case Study Client: Apex Global Distribution
+# System: Enterprise ERP Migration Governance & Phase-Gate Control System
+# ==============================================================================
+
+version: "2.4.0"
+metadata:
+  practice: "Elsamag IT Solutions"
+  lead_consultant: "Samuel Chinwendu Agu"
+  client: "Apex Global Distribution"
+  project_title: "Enterprise ERP Migration Governance & Phase-Gate Control System"
+  lifecycle_model: "Hybrid Agile-Waterfall Phase-Gate"
+  audit_standard: "PMI / Enterprise IT Governance Standard"
+
+governance_structure:
+  steering_committee:
+    quorum_percentage: 100
+    roles:
+      - "Executive Sponsor"
+      - "Chief Information Officer (CIO)"
+      - "VP of Supply Chain & Operations"
+      - "Lead Technical Consultant (Samuel Chinwendu Agu)"
+  change_control_board:
+    evaluation_cadence: "Bi-Weekly"
+    budget_variance_threshold_usd: 15000
+    schedule_variance_threshold_days: 5
+    mandatory_voting_members:
+      - "Lead PM / Governance Auditor"
+      - "Enterprise Solution Architect"
+      - "Operations Business Process Owner"
+
+phase_gates:
+  - gate_id: "GATE-01-INITIATION"
+    name: "Charter Authorization & Boundary Baseline"
+    target_timeline: "Weeks 1 - 3"
+    mandatory_artifacts:
+      - id: "ART-01"
+        name: "Project Charter v1.0"
+        status: "AUTHORIZED"
+      - id: "ART-02"
+        name: "Stakeholder Power-Interest Matrix"
+        status: "APPROVED"
+      - id: "ART-03"
+        name: "Business Case & ROI Baseline Assessment"
+        status: "VALIDATED"
+    exit_criteria:
+      - "100% Executive Steering Committee and Sponsor Sign-Off"
+      - "Project scope boundaries and business outcomes formally baselined"
+      - "Initial high-level risk register and budget envelope locked"
+    status: "PASSED"
+
+  - gate_id: "GATE-02-PLANNING"
+    name: "Scope Breakdown, RACI & CCB Activation"
+    target_timeline: "Weeks 4 - 8"
+    mandatory_artifacts:
+      - id: "ART-04"
+        name: "Work Breakdown Structure (WBS) & Dictionary"
+        status: "BASELINED"
+      - id: "ART-05"
+        name: "Cross-Functional RACI Governance Matrix"
+        status: "LOCKED"
+      - id: "ART-06"
+        name: "Change Control Board (CCB) Protocol & Charters"
+        status: "ACTIVE"
+      - id: "ART-07"
+        name: "Critical Path Method (CPM) Integrated Master Schedule"
+        status: "APPROVED"
+    exit_criteria:
+      - "Zero unresolved cross-departmental role ambiguities in RACI"
+      - "CCB voting threshold and change request submission workflow operational"
+      - "Critical path float calculations verified and contingency reserve funded"
+    status: "PASSED"
+
+  - gate_id: "GATE-03-EXECUTION"
+    name: "Agile Migration Sprints, UAT & Data Verification"
+    target_timeline: "Weeks 9 - 22"
+    mandatory_artifacts:
+      - id: "ART-08"
+        name: "Sprint Velocity & Burndown Performance Logs"
+        status: "VERIFIED"
+      - id: "ART-09"
+        name: "Legacy-to-Cloud Data Reconciliation & Integrity Audit"
+        status: "VERIFIED"
+      - id: "ART-10"
+        name: "User Acceptance Testing (UAT) Sign-Off Certificates"
+        status: "COMPLETED"
+    exit_criteria:
+      - "Zero Category 1 (Critical/Blocker) system defects open"
+      - "Data migration integrity benchmark >= 99.98%"
+      - "End-to-end multi-region workflow integration tests successfully validated"
+    status: "PASSED"
+
+  - gate_id: "GATE-04-CLOSURE"
+    name: "Operational Handover & Contractual Closeout"
+    target_timeline: "Weeks 23 - 24"
+    mandatory_artifacts:
+      - id: "ART-11"
+        name: "Operations Transition & Runbook Acceptance Sign-off"
+        status: "ACCEPTED"
+      - id: "ART-12"
+        name: "Final Budget & Earned Value Variance Audit"
+        status: "FINALIZED"
+      - id: "ART-13"
+        name: "Comprehensive Lessons Learned & Governance Post-Mortem"
+        status: "ARCHIVED"
+    exit_criteria:
+      - "Formal client written sign-off on final cutover deliverable"
+      - "Full transition of production maintenance to internal IT operations team"
+      - "All procurement contracts, contractor retainers, and vendor obligations closed"
+    status: "PASSED"
+
+change_control_protocol:
+  cr_evaluation_workflow:
+    step_1: "Submission of standardized Change Request (CR) form with business justification"
+    step_2: "Technical & financial impact assessment by Lead Technical Consultant"
+    step_3: "CCB formal review and voting quorum decision (Approve / Reject / Defer)"
+    step_4: "Baseline update across WBS, Schedule, and Budget upon approval"
+  emergency_change_procedure:
+    approver: "Executive Sponsor + Lead Technical Consultant"
+    retrospective_audit_window_hours: 48
