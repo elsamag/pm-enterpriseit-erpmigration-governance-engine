@@ -1,0 +1,84 @@
+# PROJECT CHARTER: ENTERPRISE ERP CLOUD MODERNIZATION
+
+> **Enterprise Practice:** Elsamag IT Solutions  
+> **Lead Technical Consultant:** Samuel Chinwendu Agu  
+> **Case Study Client:** Apex Global Distribution  
+> **Project Title:** Enterprise ERP Migration Governance & Phase-Gate Control System  
+> **Lifecycle Standard:** Hybrid Agile-Waterfall Phase-Gate Governance  
+> **Document Identifier:** ART-01 | Project Charter v1.0  
+
+---
+
+## 1. Executive Summary & Business Case
+
+### 1.1 Problem Statement
+Apex Global Distribution’s core supply chain, warehouse management, and financial reporting workflows currently run on a 15-year-old on-premise ERP system. The legacy system exhibits high maintenance overhead, lack of real-time multi-region data visibility, performance degradation under peak load, and elevated security vulnerabilities.
+
+### 1.2 Business Justification & ROI
+Migrating to a modern cloud-native ERP platform will unify global operations, automate regulatory tax compliance, and reduce transactional latency. The projected return on investment (ROI) includes:
+* **35% reduction** in infrastructure maintenance costs over 3 years.
+* **40% acceleration** in end-to-end order processing and inventory reconciliation cycles.
+* Real-time operational intelligence across all regional distribution nodes.
+
+---
+
+## 2. Project Objectives & Success Criteria (SMART)
+
+| Objective Category | Specific Target Metric | Validation Method |
+| :--- | :--- | :--- |
+| **System Availability** | Achieve 99.99% uptime for cloud ERP services post-cutover | Cloud monitoring telemetry |
+| **Data Integrity** | Zero data loss during migration; reconciliation threshold $\ge 99.98\%$ | Automated ETL audit logs |
+| **Schedule Adherence** | Complete cutover within the 24-week baseline window | Integrated Master Schedule (CPM) |
+| **Budget Variance** | Total spend controlled within $\pm 1\%$ of authorized budget envelope | Earned Value Management (EVM) |
+| **User Adoption** | 95% proficiency of supply chain and finance staff within 30 days of cutover | Training & assessment audits |
+
+---
+
+## 3. Project Scope Boundaries
+
+### 3.1 In-Scope
+* Migration of core business modules: General Ledger, Accounts Payable/Receivable, Inventory Management, Order Fulfillment, and Warehouse Management.
+* Automated legacy ETL extraction, data transformation, cleansing, and multi-region staging.
+* Integration with third-party logistics (3PL) carriers and regional tax engine APIs.
+* User Acceptance Testing (UAT), security penetration testing, and role-based access control (RBAC) setup.
+* Cutover execution, staff training curriculum, and post-go-live hypercare support.
+
+### 3.2 Out-of-Scope
+* Hardware upgrades for non-ERP related on-premise local workstations.
+* Custom module development outside standard cloud ERP capabilities unless approved via formal CCB Tier 3 escalation.
+* Historical transactional data archiving beyond the legally mandated 7-year retention window.
+
+---
+
+## 4. Milestone Schedule & Phase-Gate Governance
+
+The program executes under a Hybrid Agile-Waterfall model featuring 4 mandatory Phase-Gates:
+
+```text
+[ Gate 1: Initiation ] ──► [ Gate 2: Planning ] ──► [ Gate 3: Execution ] ──► [ Gate 4: Closure ]
+    Weeks 1 - 3                Weeks 4 - 8              Weeks 9 - 22              Weeks 23 - 24
+
+Phase-Gate IDMilestone DeliverableExit Criteria
+GATE-01: InitiationCharter Authorization & Scope Baseline100% Sponsor and Steering Committee sign-off
+GATE-02: PlanningWBS, RACI & CCB Protocol BaselineBaselines locked; CCB voting quorum active
+GATE-03: ExecutionSprint Iterations, Data Audit & UAT\ge 99.98\% data integrity; zero Tier 1 blockers
+GATE-04: ClosureCutover, Runbook Handover & Post-MortemFormal acceptance sign-off; contracts closed
+```
+
+## 5. Governance Structure & Resource Allocation
+
+### 5.1 Project Stakeholder & Authority Matrix
+
+| Governance Role | Name / Title | Project Responsibilities |
+| :--- | :--- | :--- |
+| **Executive Sponsor** | VP of Operations, Apex Global | Ultimate budget authority, strategic escalation, and Gate 4 sign-off |
+| **Lead Technical Consultant** | Samuel Chinwendu Agu, Elsamag | Governance oversight, CCB chair, schedule and architecture baseline management |
+| **Enterprise Solution Architect** | Technical Lead | Cloud infrastructure design, API integration, and code quality audits |
+| **Operations Process Owner** | Operations Lead | Business workflow validation, UAT coordination, and operational transition |
+| **InfoSec & Compliance Officer** | Compliance Lead | Data protection, security audit compliance, and RBAC governance |
+
+### 5.2 Budget & Funding Envelope
+* **Authorized Program Budget:** $1,850,000 USD
+* **Management & CCB Reserve:** $150,000 USD (controlled strictly via Change Control Board)
+* **Funding Release Mechanism:** Milestone-gated disbursement upon successful passage of Gates 1, 2, and 3.
+
