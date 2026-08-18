@@ -78,7 +78,23 @@ GATE-04: ClosureCutover, Runbook Handover & Post-MortemFormal acceptance sign-of
 | **InfoSec & Compliance Officer** | Compliance Lead | Data protection, security audit compliance, and RBAC governance |
 
 ### 5.2 Budget & Funding Envelope
+
 * **Authorized Program Budget:** $1,850,000 USD
 * **Management & CCB Reserve:** $150,000 USD (controlled strictly via Change Control Board)
 * **Funding Release Mechanism:** Milestone-gated disbursement upon successful passage of Gates 1, 2, and 3.
+
+---
+
+## 6. Project Risks, Assumptions & Constraints
+
+### 6.1 Initial High-Priority Risks
+
+1. **Legacy Data Corruption:** Inconsistent schema formatting in legacy database tables $\rightarrow$ *Mitigation: Automated pre-flight ETL validation pipeline and multi-pass data cleansing sprints.*
+2. **Scope Creep / Uncontrolled Mod Requests:** Departmental requests for non-standard customizations $\rightarrow$ *Mitigation: Enforcement of formal CCB Tier threshold matrix.*
+3. **Operational Downtime during Cutover:** Interruption to 24/7 global distribution networks $\rightarrow$ *Mitigation: Parallel run execution and failback cutover runbook.*
+
+### 6.2 Key Constraints & Assumptions
+
+* **Constraint:** Cutover must occur during the scheduled 48-hour low-volume maintenance window over a holiday weekend.
+* **Assumption:** Internal departmental SMEs will be dedicated $\ge 50\%$ part-time during sprint UAT cycles.
 
