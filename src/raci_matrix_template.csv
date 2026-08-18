@@ -1,0 +1,13 @@
+Deliverable_ID,Deliverable_Name,Executive_Sponsor,Project_Manager,Technical_Lead,Operations_Lead,Quality_Assurance,InfoSec_Compliance
+DEL-01,Project Charter & Business Case ROI,A,R,C,I,I,I
+DEL-02,WBS & Work Package Baseline,I,A,R,C,C,I
+DEL-03,RACI & Stakeholder Cadence Architecture,I,A,R,C,I,I
+DEL-04,CCB Change Control & Baseline Locking,C,A,R,R,C,C
+DEL-05,Data Migration & ETL Validation Pipeline,I,A,R,C,C,C
+DEL-06,Sprint Execution & Technical Velocity Audits,I,A,R,C,C,I
+DEL-07,UAT Sign-off & Integration Testing,I,A,R,A,R,C
+DEL-08,Security & Compliance Pre-Flight Audit,I,C,R,I,C,A
+DEL-09,Production Cutover & Deployment Runbook,I,A,R,R,C,C
+DEL-10,Operational Handover & Runbook Acceptance,A,R,C,A,I,I
+DEL-11,Final Budget Variance & Earned Value Audit,A,R,I,I,I,I
+DEL-12,Post-Implementation Review & Lessons Learned,I,A,R,R,R,I
